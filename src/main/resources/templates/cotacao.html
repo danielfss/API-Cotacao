@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="style.css" href="../static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="cabecalho">
+            <!-- inicio cabecalho-->
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="mx-auto text-center">
+                    <a href="cotacao.html" class="navbar-brand">
+                        <img src="../static/img/logo.png" th:src="@{img/logo.png}" width="50" height="50" class="logo" alt="Logo da página"/>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="secao1">
+            <h1>COTAÇÃO DE MOEDAS</h1>
+            <p>Saiba o valor atual das moedas.</p>
+        </section>
+
+        <section id="secao2">
+            <div class="row">
+                <div class="card bg-primary col-4">
+                    <div class="card-header">Dólar:</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div>Valor: <span th:text="${cotacao.getDolar}">0.0</span></div>
+                                <div>Valor base: <span th:text="${cotacao.getBase}">0.0</span></div>
+                                <div>Data: <span th:text="${cotacao.getData}">0.0</span></div>
+                            </div>
+                            <div class="col-6">
+                                <img src="../static/img/dolar.jpg" th:src="@{img/dolar.jpg}" class="card-img" alt="Dolar"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-primary col-4">
+                    <div class="card-header">Euro:</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div>Valor: <span th:text="${cotacao.getReal}">0.0</span></div>
+                                <div>Valor base: <span th:text="${cotacao.getBase}">0.0</span></div>
+                                <div>Data: <span th:text="${cotacao.getData}">0.0</span></div>
+                            </div>
+                            <div class="col-6">
+                                <img src="../static/img/euro.jpg" th:src="@{img/euro.jpg}" class="card-img" alt="Euro"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-primary col-4">
+                    <div class="card-header">Bitcoin:</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div>Valor: <span th:text="${cotacao.getBitcoin}">0.0</span></div>
+                                <div>Valor base: <span th:text="${cotacao.getBase}">0.0</span></div>
+                                <div>Data: <span th:text="${cotacao.getData}">0.0</span></div>
+                            </div>
+                            <div class="col-6">
+                                <img src="../static/img/bitcoin.jpg" th:src="@{img/bitcoin.jpg}" class="card-img" alt="Bitcoin"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIM DA ROW -->
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secao1 {
+    background: #fff;
+    width: 100%;
+    height: 200px;
+
+}
+
+#secao1 h1 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#secao1 p {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#secao2 {
+	background: #fff;
+	color: #fff;
+
+}
