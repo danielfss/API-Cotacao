@@ -15,6 +15,5 @@ a) A aplicação deve fazer requisições HTTP usando a API da plataforma Fixer:
 b) Utilizar Spring Boot
 c) Utilizar o Paradigma Orientado a Objetos
 
-[Imagem da aplicação](https://imgur.com/a/HOHFZgk)
-
-[Alt text](https://imgur.com/a/HOHFZgk "Optional title")
+## Página inicial
+![cotacao](https://user-images.githubusercontent.com/16904654/117078635-9ec93300-ad10-11eb-9c60-68c66b8662c8.png)
