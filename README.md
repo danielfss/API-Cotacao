@@ -16,6 +16,3 @@ b) Utilizar Spring Boot
 c) Utilizar o Paradigma Orientado a Objetos
 
 [Imagem da aplicação](https://drive.google.com/file/d/10oSEgrCDGJ_96S8enDwxthIVjuU2FjUB/view?usp=sharing)
-![Imagem da aplicação](https://drive.google.com/file/d/10oSEgrCDGJ_96S8enDwxthIVjuU2FjUB/view?usp=sharing "Página home")
-
-
